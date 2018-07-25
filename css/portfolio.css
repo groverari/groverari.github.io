@@ -1,0 +1,44 @@
+/*----------------------------------------------------------
+Author: Ariesh Grover
+Portfolio.css
+----------------------------------------------------------*/
+body{
+	background: #fff2d7;
+}
+.name-nav{
+	font-family: "Impact", Charcoal, sans-serif;
+}
+#home{
+	background: url(../img/home_background.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+	display: block;
+	height: auto;
+	width: 100%;
+	/*margin-top: 30px; Moves the main title under the Nav Bar*/
+	padding-top: 350px; /* This is spacer before the Main title Logo */
+	padding-bottom: 500px; /* This is spacer after the Main title Logo */
+}
+.text-center{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #fff;
+}
+.head-main {
+	font-size: 4em;
+	font-weight: 900;
+}
+.skill-container, .xp-container{
+	margin-top: 100px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.skillset, .xp-container{
+	color: #000;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+.skill-head{
+	font-size: 2em;
+	padding-bottom: 100;
+}
+
