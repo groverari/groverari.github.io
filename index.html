@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="./css/portfolio.css">
 		<meta name="description" content="Ariesh Grover |Software Developer">
 		<meta name="author" content="Ariesh Grover">
@@ -61,23 +62,23 @@
 			<div class="row my-5">
 				<!-- use http://fizzed.com/oss/font-mfizz-->
 				<div class="col-md">
-					<img src="./img/html.jpg" alt="" width="50px" height="60px">
+					<img class ="skill-img" src="./img/html.jpg" alt="" width="50px" height="60px">
 					<h4 class="skillset my-2">HTML/CSS<h/h4>
 				</div>
 				<div class="col-md">
-					<img src="./img/javascript.png" alt="" width="50px" height="60px">
+					<img class ="skill-img" src="./img/javascript.png" alt="" width="50px" height="60px">
 					<h4 class="skillset my-2">Javascript</h4>
 				</div>
 				<div class="col-md">
-					<img src="./img/JAVA.png" alt="" width="50px" height="60px">
+					<img class ="skill-img" src="./img/JAVA.png" alt="" width="50px" height="60px">
 					<h4 class="skillset my-2">Java</h4>
 				</div>
 				<div class="col-md">
-					<img src="./img/sql.png" alt="" width="50px" height="60px">
+					<img  class ="skill-img"src="./img/sql.png" alt="" width="50px" height="60px">
 					<h4 class="skillset my-2">MSSQL</h4>
 				</div>
 				<div class="col-md">
-					<img src="./img/c-sharp.png" alt="no" width="50px" height="60px">
+					<img class ="skill-img" src="./img/c-sharp.png" alt="no" width="50px" height="60px">
 					<h4 class="skillset my-2">C#/.NET</h4>
 				</div>
 			</div>
@@ -93,10 +94,42 @@
 				</div>
 				<div class="row">
 					<div class="col-xl">
-					Help Me Get Some
+					Coming soon
 					</div>
 					
 				</div>
+				<button type="button" class="btn btn-outline-success my-3" onclick="show()"id="exp-btn">Other Experience</button>
+				<div class="row"id ="other-exp">
+				<!--Menchies-->
+					<div class ="col-sm">
+						<h3 class="other-head">Menchie's Frozen Yogurt<h3>
+						<ul class="task">
+							<li>Cashier duties</li>
+							<li>Customer Service</li>
+						</ul>
+					</div>
+				<!--/Menchies-->
+				
+				<!--UCR Dining-->
+					<div class="col-sm">
+						<h3 class="other-head">UCR Dining</h3>
+						<ul class="task">
+							<li>Cleaning and general maintenance of the eating area</li>
+							<li>Cooking food for customers</li>
+						</ul>
+					</div>
+				<!--/UCR DINING-->
+				<!--Nirankari MIssion-->
+					<div class="col-sm">
+						<h3 class="other-head">Sant Nirankari Mission</h3>
+						<ul class="task">
+							<li>Youth leader</li>
+							<li>Set up and take down at all events</li>
+						</ul>
+					</div
+				<!--?Nirankari Mission-->
+				</div>
+				<button type="button" class="btn btn-outline-success my-3" onclick="hide()"id="hide-btn">Hide Experience</button>
 			</div>
 		
 		<!--END EXPERIENCE-->
@@ -113,5 +146,27 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+		<script>
+			/*$(document).ready(function(){
+				$("#exp-btn").click(function(){
+					$("#other-exp").slideToggle("slow");
+				});
+			});*/
+			function show(){
+				document.getElementById("other-exp").style.visibility = "visible";
+				document.getElementById("exp-btn").style.visibility = "hidden";
+				document.getElementById("hide-btn").style.visibility = "visible";
+
+
+			}
+			function hide(){
+				document.getElementById("other-exp").style.visibility = "hidden";
+				document.getElementById("exp-btn").style.visibility = "visible";
+				document.getElementById("hide-btn").style.visibility = "hidden";
+
+
+			}
+			
+		</script>
 	</body>
 </html>

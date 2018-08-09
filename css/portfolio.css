@@ -41,4 +41,29 @@ body{
 	font-size: 2em;
 	padding-bottom: 100;
 }
-
+.skill-img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+ul{
+	list-style: none;
+}
+.task li{
+	color: #000;
+	font-family: "Arial", sans-serif;
+	font-size: 20px;
+	text-align: left;
+	padding: 10px;
+}
+.other-head{
+	text-align: left;
+	font-weight: 10;
+	
+}
+#other-exp{
+	margin: 10%;
+	
+}
+#hide-btn{
+	visibility: hidden;
+}
