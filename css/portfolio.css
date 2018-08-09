@@ -62,6 +62,7 @@ ul{
 }
 #other-exp{
 	margin: 10%;
+	visibility: hidden;
 	
 }
 #hide-btn{
