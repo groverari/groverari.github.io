@@ -1,2 +1,1 @@
-# groverari.github.io
-My Website
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=groverari)](https://github.com/anuraghazra/github-readme-stats)
